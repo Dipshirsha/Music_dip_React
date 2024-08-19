@@ -1,0 +1,125 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+ 
+  font-style: oblique;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: aliceblue;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks within the container */
+  height: 90vh; 
+}
+
+  .filter-icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+  }
+  .user-greeting {
+    font-size: 1.25rem; /* Equivalent to text-xl */
+  }
+  
+  .songs-container {
+    display: block;
+    width: 100%;
+    overflow-x: auto;  /* Enable horizontal scrolling */
+    white-space: nowrap;  /* Prevent line breaks */
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+  }
+  
+  .home-container::-webkit-scrollbar {
+    display: none;  /* For Chrome, Safari, and Opera */
+  }
+  
+  .home-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .songs-container::-webkit-scrollbar {
+    display: none;  /* For Chrome, Safari, and Opera */
+  }
+  
+  .songs-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .extra-height {
+    height: 160px;
+  }
+  
+  .song-player {
+    position: fixed;
+    bottom: 0;
+  }
+  
+  @media(max-width: 460px) {
+    .songs-container {
+      display: block;
+      width: 100%;
+      overflow-x: auto;  /* Enable horizontal scrolling */
+      white-space: nowrap;  /* Prevent line breaks */
+      padding: 10px;
+    }
+  }
+
+  .load-more-container {
+    text-align: center;
+    padding: 20px 0;
+    background-color:#1D1C1C /* Adjust as needed */
+  }
+  
+
+  /* In your CSS file */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.font{
+  font-family: "Playwrite BE VLG", cursive;
+  font-optical-sizing: auto;
+font-size: xx-large;
+  font-style: normal;
+  font-weight: 800;
+}
+.arrow-buttons {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -50px; /* Adjust based on your layout */
+}
+
+.arrow {
+  background-color: #1D1C1C;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 10px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.left-arrow {
+  position: absolute;
+  left: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 10px;
+}
